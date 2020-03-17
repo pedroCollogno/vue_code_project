@@ -42,7 +42,7 @@ export default {
         .then((res) => {
           if (res.data) {
             currentUser.authenticate();
-            router.push({path: "/about"});
+            router.push({path: "/exercises"});
           }
         })
         .catch((err) => {
