@@ -2,4 +2,4 @@
 
 ## About
 
-Become the Lord of the Code with this nice web-app for coding exercises management.
+Become the Lord of the Codes with this nice web-app for coding exercises management.
