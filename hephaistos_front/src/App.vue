@@ -3,8 +3,8 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/login" v-if="!this.isAuthenticated">Login</router-link>
-      <button v-else type="button" @click="logOut">Log out</button>
+      <router-link to="/login" v-if="!this.isAuthenticated()">Login</router-link>
+      <button v-else type="button" @click="logOut" class="btn btn-danger">Log out</button>
     </div>
     <router-view />
   </div>
@@ -12,6 +12,7 @@
 
 <script>
 import currentUser from "./services/UserServices";
+import router from "./router";
 
 export default {
   methods: {
@@ -20,6 +21,7 @@ export default {
     },
     logOut() {
       currentUser.logOut();
+      router.push({path: "/login"});
     }
   }
 }

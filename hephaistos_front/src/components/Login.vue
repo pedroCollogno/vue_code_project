@@ -28,9 +28,10 @@ import router from "../router";
 export default {
   data() {
     return {
+      // ENTER THE RIGHT CREDS FOR THE API HERE
       userCreds: {
         email: "admin@example.com",
-        password: "BFSmltcAPS"
+        password: "HzGZWi0OKY"
       },
       badCredsEntered: false
     }
